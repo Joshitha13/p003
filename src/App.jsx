@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
 import CourseCard from './CourseCard.jsx';
+import img1 from './assets/1.jpg';
+import img2 from './assets/2.jpg';
+import img3 from './assets/3.jpg';
+import img4 from './assets/4.jpg';
+
 
 class App extends Component {
   constructor(){
     super();
-    this.state = {courses:[
-      {name:"Data Structure and Algorithms", duration:"40hrs", price:"$100", img:"1.jpg"},
-      {name:"Java Programming", duration: "30hrs", price:"$80", img:"2.jpg"},
-      {name:"React JS", duration:"40hrs", price:"$120", img:"3.jpg"},
-      {name:"Machine Learning", duration: "35hrs", price:"$200", img:"4.jpg"},
-    ]};
+    this.state = {
+  courses:[
+    {name:"Data Structure and Algorithms", duration:"40hrs", price:"$100", img: img1},
+    {name:"Java Programming", duration:"30hrs", price:"$80", img: img2},
+    {name:"React JS", duration:"40hrs", price:"$120", img: img3},
+    {name:"Machine Learning", duration:"35hrs", price:"$200", img: img4},
+  ]
+};
+
   }
 
   render() {

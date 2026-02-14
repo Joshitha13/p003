@@ -6,7 +6,8 @@ class CourseCard extends Component {
         const BASEURL = import.meta.env.BASE_URL;
         return (
             <div className='coursecard'>
-                <img src={BASEURL + data.img} alt='' />
+                <img src={data.img} alt={data.name} />
+
                 <h3>{data.name}</h3>
                 <p>
                     <span>Duration</span>
